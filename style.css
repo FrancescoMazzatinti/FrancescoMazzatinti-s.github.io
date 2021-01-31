@@ -58,7 +58,7 @@ body {
 /*organize elements */
 .header-list > .navlist {
     margin-left: auto;
-    padding:  0px 30px;
+    padding:  10px 30px;
 }
 .header-list {
     display: flex;
@@ -66,32 +66,34 @@ body {
     padding: 25px;
     list-style: none;
 }
-/* Transform element */
-.navlist {
-    transition: all 0.3s linear;
-}
-.navlist:hover {
-    transform: scale(1.1);
-    text-decoration: none;
-}
 /* Text properties and transform */
-a {
+.navlist {
     color: rgb(20, 20, 20);
     text-decoration: none;
     font-size: 0.65em;
     text-transform: uppercase;
+    transition: all 0.3s linear;
+}
+.provea {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    text-transform: uppercase;
     font-weight: 500;
 }
-a:hover {
-    text-decoration: none;
-    font-size: 0.7em;
-    color:#1e1f66;
+.navlist:hover {
+    transform: scale(1.2);
     font-weight: 600;
 }
+.provea:hover {
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+
+
 
 
 /* HOME */
-/*cardo position*/
+/*card position*/
 .card {
     width: 440px;
     margin-top: 6em;
@@ -102,21 +104,30 @@ a:hover {
 .card-title {
     font-weight:  800;
 }
-.card-title > span {
+.franc-text {
     color: #b1b493;
+}
+.franc-text:hover {
+    color:#1e1f66;
+    text-decoration: none;
 }
 
 
 /* when the screen is medium */
 @media screen and (max-width: 1400px) {
-    .card-title > span {
+    .franc-text {
         color:#1e1f66;
     }
+    .franc-text:hover {
+        color:  #b1b493;
+        text-decoration: none;
+    }
+}
 
 /* when the screen is small */
 @media screen and (max-width: 800px) {
     .header-list {
-        font-size: 0.75em;
+        font-size: 0.8em;
         padding:  25px;
     }
     .logo-transform {
@@ -128,7 +139,10 @@ a:hover {
     }
     .header-list > .navlist {
         margin-left: auto;
-        padding:  0px 5px;
+        padding:  5px 5px;
+    }
+    .provea {
+        font-weight: 700;
     }
     .zone {
         height: 70px;
@@ -136,7 +150,7 @@ a:hover {
     .card {
         margin-left: 2em;
     }
-
+}
 
 /* when the screen is even smaller */
 
@@ -149,8 +163,21 @@ a:hover {
         padding:  0px 10px; 
         }
     .header-list {
+        font-size: 0.8em;
+        padding:  10px;
+    }
+    .logo {
+        top: 3px;
+        padding-left: 10px;
+    }
+    .provea2 {
         font-size: 1em;
-        padding:  15px;
+        color: rgb(20, 20, 20);
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    .provea2:hover {
+        color: rgb(20, 20, 20);
     }
     .dropdown-menu {
         font-size: 0.8em;
@@ -163,9 +190,7 @@ a:hover {
         width: 50%;
         margin-left: 1em;
     }
-
-
-}}
+}
 
 
 
