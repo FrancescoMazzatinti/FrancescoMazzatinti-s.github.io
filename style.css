@@ -1,0 +1,172 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* home page container */
+.container-first {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("./images/Image-home.png") no-repeat 70% center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* NAV */
+
+/* hide the select menu */
+.dropdown {
+    display: none;
+  }
+.zone {
+    height: 90px;
+    cursor:pointer;
+    font-size:2em;
+    transition: all 0.3s linear;
+}
+/* navbar shadow */
+.zone:hover {
+    background-color: rgb(0, 0, 0, 0.2);
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+}
+/* stick at the top */
+.sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+}
+/* Position logo */
+.logo {
+    position: relative;
+    top: -8px;
+    left: 20px;
+    transition: all 0.4s linear;
+}
+/* Transform logo */
+.logo-transform {
+    transition: all 0.2s linear;
+}
+.logo-transform:hover {
+    transform: scale(1.1);
+}
+/*organize elements */
+.header-list > .navlist {
+    margin-left: auto;
+    padding:  0px 30px;
+}
+.header-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+    list-style: none;
+}
+/* Transform element */
+.navlist {
+    transition: all 0.3s linear;
+}
+.navlist:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+}
+/* Text properties and transform */
+a {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    font-size: 0.65em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+a:hover {
+    text-decoration: none;
+    font-size: 0.7em;
+    color:#1e1f66;
+    font-weight: 600;
+}
+
+
+/* HOME */
+/*cardo position*/
+.card {
+    width: 440px;
+    margin-top: 6em;
+    margin-left: 7em;
+    background-color: transparent;
+    border: none;
+}
+.card-title {
+    font-weight:  800;
+}
+.card-title > span {
+    color: #b1b493;
+}
+
+
+/* when the screen is medium */
+@media screen and (max-width: 1400px) {
+    .card-title > span {
+        color:#1e1f66;
+    }
+
+/* when the screen is small */
+@media screen and (max-width: 800px) {
+    .header-list {
+        font-size: 0.75em;
+        padding:  25px;
+    }
+    .logo-transform {
+        width: 80px;
+        height: 40px;
+    }
+    .logo {
+        left: 5px;
+    }
+    .header-list > .navlist {
+        margin-left: auto;
+        padding:  0px 5px;
+    }
+    .zone {
+        height: 70px;
+    }
+    .card {
+        margin-left: 2em;
+    }
+
+
+/* when the screen is even smaller */
+
+@media screen and (max-width: 550px) {
+    /* don't show navlist but show dropdown */
+    .navlist   { display: none; }
+    .dropdown {
+        display: flex;
+        margin-left: auto;
+        padding:  0px 10px; 
+        }
+    .header-list {
+        font-size: 1em;
+        padding:  15px;
+    }
+    .dropdown-menu {
+        font-size: 0.8em;
+        padding: 10px 40px 10px 14px;
+        background: rgba(255, 255, 255, 0.85);;
+        border-radius: 6px;
+        position: relative;
+    }
+    .card {
+        width: 50%;
+        margin-left: 1em;
+    }
+
+
+}}
+
+
+
+
