@@ -3,17 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 /* home page container */
-.container-first {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background: url("./images/Image-home.png") no-repeat 70% center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+
 
 /* NAV */
 
@@ -21,26 +11,27 @@ body {
 .dropdown {
     display: none;
   }
+
 .zone {
+    position: sticky; /* stick at the top */
+    z-index:1;
+    top: 0;
+    width: 100%;
     height: 90px;
     cursor:pointer;
     font-size:2em;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
+    background-color: rgba(174,180,179, 0.95);
 }
 /* navbar shadow */
 .zone:hover {
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgb(174,180,179, 0.8);
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.10) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.10) 0px -10px 20px;
     -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.10) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.10) 0px -10px 20px;
 }
-/* stick at the top */
-.sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-}
+
 /* Position logo */
 .logo {
     position: relative;
@@ -72,7 +63,7 @@ body {
     text-decoration: none;
     font-size: 0.65em;
     text-transform: uppercase;
-    transition: all 0.3s linear;
+    transition: all 0.2s linear;
 }
 .provea {
     color: rgb(20, 20, 20);
@@ -90,14 +81,25 @@ body {
 }
 
 
-
-
 /* HOME */
+
+.container-first {
+    position: static;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: url("./images/Image-home.png") no-repeat 70% 20% fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 /*card position*/
 .card {
+    position: relative;
     width: 440px;
-    margin-top: 6em;
-    margin-left: 7em;
+    top: 6em;
+    left: 7em;
     background-color: transparent;
     border: none;
 }
@@ -113,6 +115,311 @@ body {
 }
 
 
+/* divider1 */
+
+.divider1 {
+    height: 250px;
+    width: 100%;
+    background-color: rgba(230,230,230);
+}
+
+
+/* ABOUT ME */
+
+/* organize content and image */
+.container-second {
+    position: static;
+    height: 800px;
+    width: 88%;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: grid;
+    grid-gap: 5%;
+    grid-template-columns: 45% 50%;
+}
+.about-image {
+    background: url("./images/about-image.jpg") no-repeat center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.about-text {
+    width: 100%;
+}
+/* text style about*/
+.subheading-about {
+    color:  #b1b493;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-top: 20%;
+}
+.heading-about {
+    margin-top: 2%;
+    color: rgb(20, 20, 20);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.p-about {
+    margin-top: 7%;
+    color: #999999;
+}
+.table-about {
+    margin-top: 7%;
+    margin-left: -35px;
+}
+.tbody1 {
+    font-size: 1em;
+    font-weight: 600;
+}
+.first-columnt {
+    color: rgb(20, 20, 20);
+}
+.sec-columnt {
+    color:  #b1b493;
+}
+.about-line {
+    margin-top: 7%;
+    border-color:  rgba(230,230,230);
+    border-width: 2px;
+}
+
+
+/*CONTAINER SKILLS*/
+
+/*general skills position*/
+.container-skills {
+    position: static;
+    width: 100%;
+    background-color: rgba(230,230,230);
+}
+.skills-text{
+    position: relative;
+    padding-top: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+/* text style skills*/
+.subheading-skills {
+    color:  #b1b493;
+    font-size: 1.2em;
+    text-transform: uppercase;
+
+}
+.heading-skills {
+    padding-top: 1%;
+    color: rgb(20, 20, 20);
+    font-size: 2.5em;
+    font-weight: 700;
+}
+.p-skills {
+    padding-top: 4%;
+    color: #999999;
+}
+.heading-skills2{
+    color: rgb(20, 20, 20);
+    font-size: 2.5em;
+    font-weight: 700;
+    padding-top: 5%;
+}
+/* cards style text skills*/
+.skills-cards {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 100px;
+    padding-bottom: 110px;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-row-gap: 65px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.card-skill {
+    background-color:white;
+    height: 300px;
+    border-radius: 5px;
+    transition: all 0.2s linear;
+    -webkit-box-shadow:rgba(0,0,0,0.3) 0px 5px 20px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.3) 0px 5px 20px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.3) 0px 5px 20px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.3) 0px 5px 20px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+}
+/* cards style text skills*/
+.card-text-slills{
+    padding-top: 25px;
+    padding-left: 8%;
+    padding-right: 16%;
+}
+.card-t-skills {
+    color: rgb(20, 20, 20);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.card-p-skills {
+    padding-top: 5px;
+    color: #999999;
+}
+/* cards logo skills*/
+.card-logo-skills {
+    transition: all 0.2s linear;
+    background-color:  #b1b493;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 8%;
+    margin-top: -10%;
+    -webkit-box-shadow:rgba(0,0,0,0.3) 0px 5px 15px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.3) 0px 5px 15px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.3) 0px 5px 15px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.3) 0px 5px 15px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+}
+.logsk1{
+    width: 80px;
+    height: 80px;
+    margin-left: 9px;
+    margin-top: 10px;
+}
+.logsk2 {
+    width: 60px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.logsk3 {
+    width: 85px;
+    height: 76px;
+    margin-left: 7px;
+    margin-top: 9px;
+}
+.card-skill:hover {
+    transform: scale(1.05);
+}
+.card-skill:hover .card-logo-skills { margin-left: 17%; transform: scale(1.05); }
+
+
+
+
+/* CONTAINER PLACES */
+
+.container-places {
+    width: 100%;
+    background-color: white;
+}
+.p-places {
+    color: #999999;
+}
+.headpl {
+    padding-top: 0%;
+}
+/* set text-card places */
+.card-text-places{
+    margin-top: 280px;
+    margin-left: 7%;
+    display: none;
+}
+.places-text-incard {
+    font-weight: 700;
+    color: honeydew;
+}
+/* style card places */
+.container-places-cards {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 50px;
+    padding-bottom: 110px;
+    display: grid;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+.places-cards {
+    transition: all 0.3s;
+}
+/* set image background on all card places */
+.i1 {
+    background: url("./images/ny.jpg") no-repeat center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.i2 {
+    background: url("./images/grece.jpg") no-repeat center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.i3 {
+    background: url("./images/nap.jpg") no-repeat center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.i4 {
+    background: url("./images/cal.jpg") no-repeat center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.i5 {
+    background: url("./images/assisi.jpg") no-repeat center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.i6 {
+    background: url("./images/thay.jpg") no-repeat center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.places-cards {
+    background-color:white;
+    height: 350px;
+    border-radius: 2px;
+    transition: all 0.2s linear;
+    -webkit-box-shadow:rgba(0,0,0,0.3) 0px 5px 20px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.3) 0px 5px 20px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.3) 0px 5px 20px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.3) 0px 5px 20px, inset rgba(0,0,0,0.10) 0px -10px 20px;
+}
+/* hover card places */
+.places-cards:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+.places-cards:hover .card-text-places { 
+    display: block; 
+}
+
+
+
+
+.container-contact {
+    color: color: #999999;
+    height: 900px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* when the screen is medium */
 @media screen and (max-width: 1400px) {
     .franc-text {
@@ -122,10 +429,15 @@ body {
         color:  #b1b493;
         text-decoration: none;
     }
+    /*places*/
+    .container-places-cards {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
 }
 
 /* when the screen is small */
 @media screen and (max-width: 800px) {
+    /*navbar*/
     .header-list {
         font-size: 0.8em;
         padding:  25px;
@@ -147,14 +459,33 @@ body {
     .zone {
         height: 70px;
     }
+    /*home*/
     .card {
-        margin-left: 2em;
+        margin-left: -5em;
     }
+    /*about*/
+    .container-second {
+        position: static;
+        height: 750px;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        display: grid;
+        grid-gap: 5%;
+        grid-template-columns: 45% 50%;
+    }
+    .about-line   { display: none; }
+    /*places*/
+    .container-places-cards {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
 }
 
 /* when the screen is even smaller */
 
 @media screen and (max-width: 550px) {
+    /*navbar*/
     /* don't show navlist but show dropdown */
     .navlist   { display: none; }
     .dropdown {
@@ -186,12 +517,52 @@ body {
         border-radius: 6px;
         position: relative;
     }
+    /*home*/
+    .container-first {
+        position: static;
+        top: 0;
+        width: 100%;
+        height: 900px;
+        background: url("./images/Image-home.png") no-repeat 65% center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
     .card {
-        width: 50%;
-        margin-left: 1em;
+        width: 70%;
+        margin-left: -6em;
+    }
+    /*about*/
+    .container-second {
+        position: static;
+        height: 800px;
+        width: 90%;
+        margin-left: 0%;
+        margin-right: 5%;
+        display: grid;
+        grid-template-columns: 0% 100%;
+    }
+    .about-text {
+        font-size: 100%;
     }
 }
 
+/* when the screen is a phone (height)*/
+
+@media screen and (max-height: 800px) {
+    /*about*/
+    .about-text {
+        font-size: 80%;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    /*about*/
+    .about-text {
+        font-size: 70%;
+    }
+}
 
 
 

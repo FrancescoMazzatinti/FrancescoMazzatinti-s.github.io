@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
     <!-- Animate site -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -23,43 +23,183 @@
 </head>
 
 <body>
-    <div class="container-first">
-        <nav class="zone">
-            <ul class=" header-list sticky">
-                <li class=><a class="logo" href="#"><img class="logo-transform" src="./images/fra.png" alt="Logo"
-                            width="100" height="54"></a></li>
-                <li class="navlist"><a class="provea" href="header-item">about</a></li>
-                <li class="navlist"><a class="provea" href="header-item">experience</a></li>
-                <li class="navlist"><a class="provea" href="header-item">contacts</a></li>
-                <!--responsive navbar-->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle provea" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        menu
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="provea2" href="#">about</a></li>
-                        <li><a class="provea2" href="#">experience</a></li>
-                        <li><a class="provea2" href="#">contacts</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+    <nav class="zone sticky">
+        <ul class=" header-list">
+            <li class=><a class="logo" href="#"><img class="logo-transform" src="./images/fra.png" alt="Logo"
+                        width="100" height="54"></a></li>
+            <li class="navlist"><a class="provea" href="#skills">skills</a></li>
+            <li class="navlist"><a class="provea" href="#places">places</a></li>
+            <li class="navlist"><a class="provea" href="header-item">contacts</a></li>
+            <!--responsive navbar-->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle provea" href="#" id="navbarDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="provea2" href="#">experience</a></li>
+                    <li><a class="provea2" href="#">places</a></li>
+                    <li><a class="provea2" href="#">contacts</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
+    <div class="container-first">
         <div class="home card animate__bounceIn">
             <div class="card-body">
-              <h1 class="card-title">Hi, I am <span><a class="franc-text" href="header-text">Francesco</a></span> <br>Mazzatinti</h1>
-              <p class="card-text">I am a sixteen years old boy, I attend the scientific Liceum Filippo Lussana in Bergamo
-                and I'm fond of technology and space</p>
+                <h1 class="card-title">Hi, I am <span><a class="franc-text" href="#about-me">Francesco</a></span>
+                    <br>Mazzatinti
+                </h1>
+                <p class="card-text">I am a sixteen years old boy, I attend the scientific Liceum Filippo Lussana in
+                    Bergamo
+                    and I'm fond of technology and space</p>
             </div>
-          </div>
+        </div>
     </div>
 
-    <div class="Separator"></div>
+    <div class="divider1">
+    </div>
 
-    <div class="About"></div>
+    <div class="container-second ">
+        <div class="about-image">
+        </div>
+        <div class="about-text">
+            <span>
+                <h4 id="about-me" class="subheading-about">Welcome</h4>
+            </span>
+            <h2 class="heading-about">About me</h2>
+            <p class="p-about">Life isn't always easy, and most of the times it doesn't go as we would like and as we
+                planned. In response
+                most of us decide to stay in their comfort zone and take as few riks as they can. At the end though, the
+                it
+                ends that they live a mediocre life... Personally I want my life to be different, for this reason I
+                think
+                that the most dangerous thing you can do with your life it's play it safe</p>
+            <table class="table table-borderless table-responsive table-about">
+                <tbody class="tbody1">
+                    <tr>
+                        <th scope="row"></th>
+                        <td class="first-columnt">Name:</td>
+                        <td class="sec-columnt">Francesco Mazzatinti</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td class="first-columnt">Date of birth:</td>
+                        <td class="sec-columnt">July 19, 2004</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td class="first-columnt">Address:</td>
+                        <td class="sec-columnt">Via Todeschini 62/A, 24030, Mozzo, Italy</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td class="first-columnt">Email:</td>
+                        <td class="sec-columnt">francesco.mazzatinti@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td class="first-columnt">Phone:</td>
+                        <td class="sec-columnt">+39-338-214-81-82</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr class="about-line">
+        </div>
+    </div>
 
-    <div class="experience"></div>
+    <div class="container-skills">
+        <div class="skills-text">
+            <h4 id="skills" class="subheading-skills">skills and education</h4></span>
+            <h2 class="heading-skills">My Education</h2>
+            <p class="p-skills">I go to a scientific high school, and I am attending the third year; at school I study
+                mostly scientific subjects but also Latin and History, and two foreign languages: English and Spanish.
+                My favorite subject is Physics because I find it interesting and fascinating but at the same time it can
+                be challenging. I also like Philosophy and English. <br>
+                I think that destiny never makes signs: it turns up his hand and gives the answer, it doesn’t suggest.
+                I don’t know what I will do in the future, destiny is unpredictable, but I have clear ideas of what I
+                want to do, sod I am working to lay down the basis to let this happen: I really would like to become an
+                aerospace engineer and go to work at Nasa or Space-x or also create something mine, like an innovative
+                startup. I know it is very ambitious and that It won’t be easy, but I also know for sure that I will put
+                all my effort into it.
+            </p>
+            <h3 class="heading-skills2">My Skills</h3>
+        </div>
+        <div class="skills-cards">
+            <div class="card-skill">
+                <div class="card-logo-skills">
+                    <img class="logsk1" src="./images/webdev.png">
+                </div>
+                <div class="card-text-slills">
+                    <h4 class="card-t-skills">Web Development</h4>
+                    <p class="card-p-skills">I can build amazing customs websites using html and css that adapts to every device</p>
+                </div>
+            </div>
+            <div class="card-skill">
+                <div class="card-logo-skills ">
+                    <img class="logsk2" src="./images/brochure.png">
+                </div>
+                <div class="card-text-slills">
+                    <h4 class="card-t-skills">Brochure and Flyer desing</h4>
+                    <p class="card-p-skills">I can create stylish and creative brochure and flyers magazins and catalogs
+                        using adobe softwares</p>
+                </div>
+            </div>
+            <div class="card-skill">
+                <div class="card-logo-skills">
+                    <img class="logsk3" src="./images/photo.png">
+                </div>
+                <div class="card-text-slills">
+                    <h4 class="card-t-skills">Photoshop</h4>
+                    <p class="card-p-skills">I can modify, edit, restore and adjust your photos to make them become gorgeous</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-places">
+        <div class="skills-text">
+            <h4 id="places" class="subheading-skills">places</h4></span>
+            <h2 class="heading-skills headpl">My Places</h2>
+            <p class="p-places">I love traveling: It is the only way to escape the reality!
+            </p>
+        </div>
+        <div class="container-places-cards">
+        <div class="places-cards i1">
+            <div class="card-text-places">
+                <h4 class="places-text-incard">New York 2015</h4>
+            </div>
+        </div>
+        <div class="places-cards i2">
+            <div class="card-text-places">
+                <h4 class="places-text-incard">Zante 2019</h4>
+            </div>
+        </div>
+        <div class="places-cards i3">
+            <div class="card-text-places">
+                <h4 class="places-text-incard">Naples 2020</h4>
+            </div>
+        </div>
+        <div class="places-cards i4">
+            <div class="card-text-places">
+                <h4 class="places-text-incard">Santa Barbara 2019</h4>
+            </div>
+        </div>
+        <div class="places-cards i5">
+            <div class="card-text-places">
+                <h4 class="places-text-incard">Assisi 2019</h4>
+            </div>
+        </div>
+        <div class="places-cards i6">
+            <div class="card-text-places">
+                <h4 class="places-text-incard">Thayland 2018</h4>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="container-contact"></div>
 
     <div class="Quote"></div>
 
